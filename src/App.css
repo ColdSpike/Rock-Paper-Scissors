@@ -1,0 +1,284 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #101885 0%, #34135c 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  margin: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 50vw;
+  max-height: 300px;
+  border: 5px solid hsl(210, 2%, 58%);
+  border-radius: 1.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.app-header-logo {
+  width: 10rem;
+  height: auto;
+}
+
+.app-header-card {
+  background-color: white;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.app-rules {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-body {
+  margin: 1rem;
+  width: 100%;
+  max-width: 30vw;
+  /* border: 5px solid hsl(210, 2%, 58%); */
+  border-radius: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-body-play-area {
+  width: 100%;
+}
+
+.app-body-play-area-selected-headers {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.app-body-play-area-row1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app-body-play-area-row1-paper {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1rem solid red;
+  box-shadow: 0px 8px 1px 0px rgba(255, 0, 0, 0.5),
+    0px 5px 1px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.app-body-play-area-row1-paper:hover {
+  box-shadow: 0px 8px 1px 0px rgba(255, 0, 0, 0.5),
+    0px 5px 1px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 3px 1px 20px rgba(255, 0, 0, 0.2), 0px 3px 1px 40px rgba(255, 0, 0, 0.2),
+    0px 3px 1px 60px rgba(255, 0, 0, 0.2);
+}
+
+.app-body-play-area-row1-scissor {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1rem solid blue;
+  box-shadow: 0px 8px 1px 0px rgba(0, 0, 255, 0.5),
+    0px 5px 1px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.app-body-play-area-row1-scissor:hover {
+  box-shadow: 0px 8px 1px 0px rgba(0, 0, 255, 0.5),
+    0px 5px 1px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 3px 1px 20px rgba(0, 0, 255, 0.2), 0px 3px 1px 40px rgba(0, 0, 255, 0.2),
+    0px 3px 1px 60px rgba(0, 0, 255, 0.2);
+}
+
+.app-body-play-area-row2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.app-body-play-area-row1-rock {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1rem solid green;
+  box-shadow: 0px 8px 1px 0px rgba(0, 255, 0, 0.5),
+    0px 5px 1px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.app-body-play-area-row1-rock:hover {
+  box-shadow: 0px 8px 1px 0px rgba(0, 255, 0, 0.2),
+    0px 5px 1px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 3px 1px 20px rgba(0, 255, 0, 0.2), 0px 3px 1px 40px rgba(0, 255, 0, 0.2),
+    0px 3px 1px 60px rgba(0, 255, 0, 0.2);
+}
+
+.app-body-results {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.app-body-results-button {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  border: 1px solid whitesmoke;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.app-body-rules-button {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  border: 1px solid whitesmoke;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: white;
+  background: transparent;
+  width: 8rem;
+}
+
+h6 {
+  color: purple;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+h4 {
+  color: white;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+h5 {
+  color: hsl(229, 64%, 46%);
+  font-size: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  transition: all 800ms;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 580px) {
+  .app-header {
+    margin: 1rem;
+    max-width: 70vw;
+  }
+
+  .app-header-logo {
+    width: auto;
+    height: 3rem;
+  }
+
+  .app-header-card {
+    margin-left: 0rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .app-body {
+    margin: 1rem;
+    max-width: 90vw;
+    padding: 0rem;
+  }
+
+  .app-body-play-area {
+    width: 100%;
+  }
+
+  .app-body-play-area-row1 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .app-body-play-area-row2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .app-body-results-button {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .app-body-rules-button {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    height: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: white;
+    background: transparent;
+    width: 8rem;
+  }
+
+  h6 {
+    font-size: 0.6rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 900px) {
+  .app-header {
+    margin: 2rem;
+    max-width: 70vw;
+  }
+
+  .app-body {
+    max-width: 50vw;
+  }
+}
